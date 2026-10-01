@@ -1,46 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Semaforo TRIAGE</title>
+    <meta charset="UTF-8">
+    <title>Semáforo TRIAGE</title>
 </head>
-<body style="font-family: Arial; text-align: center;">
+<body style="font-family: Arial, sans-serif; background-color: #ffffff; text-align: center;">
 
-    <h1 style="color: #0b2265; font-size: 35px; margin-bottom: 0;">Semáforo TRIAGE</h1>
-    <p style="color: #0b2265; font-size: 20px; font-style: italic; margin-top: 0;">urgencias</p>
+    <!-- TITULO -->
+    <h1 style="color: #0b2265; font-size: 32px; margin-bottom: 0;">Semáforo TRIAGE</h1>
+    <p style="color: #0b2265; font-size: 18px; font-style: italic; margin-top: 0; margin-bottom: 25px;">urgencias</p>
 
-    <div style="background-color: #e8eef8; color: #0b2265; font-size: 13px; font-weight: bold; padding: 6px; margin-bottom: 15px;">
-        Tipo de atención &nbsp;&nbsp;|&nbsp;&nbsp; Área de atención &nbsp;&nbsp;|&nbsp;&nbsp; Tiempo de espera
-    </div>
+    <!-- TABLA BASICA EN 3 COLUMNAS -->
+    <table border="0" align="center" style="width: 90%; max-width: 600px; text-align: center; border-collapse: collapse;">
+        
+        <!-- ENCABEZADOS DE LAS COLUMNAS -->
+        <tr>
+            <th style="background-color: #e8eef8; color: #0b2265; font-size: 13px; padding: 8px; border-radius: 10px; width: 33%;">Tipo de atención</th>
+            <th style="background-color: #e8eef8; color: #0b2265; font-size: 13px; padding: 8px; border-radius: 10px; width: 33%;">Área de atención</th>
+            <th style="background-color: #e8eef8; color: #0b2265; font-size: 13px; padding: 8px; border-radius: 10px; width: 33%;">Tiempo de espera</th>
+        </tr>
 
-    <div style="color: #ff2a2a; margin-bottom: 15px;">
-        <b style="font-size: 18px;">Reanimación</b><br>
-        <span style="font-size: 14px;">Área de reanimación</span><br>
-        <span style="font-size: 14px;">Inmediato hasta 3 min</span>
-    </div>
+        <!-- ESPACIO -->
+        <tr height="15"></tr>
 
-    <div style="color: #ff8433; margin-bottom: 15px;">
-        <b style="font-size: 18px;">Emergencia</b><br>
-        <span style="font-size: 14px;">Área de reanimación</span><br>
-        <span style="font-size: 14px;">Inmediato hasta 10 min</span>
-    </div>
+        <!-- FILA 1: ROJO -->
+        <tr style="color: #ff2a2a; font-size: 14px;">
+            <td style="padding: 10px;"><b><i>Reanimación</i></b></td>
+            <td style="padding: 10px;">Área de<br>reanimación</td>
+            <td style="padding: 10px;">Inmediato<br>hasta 3 min</td>
+        </tr>
 
-    <div style="color: #e0ca20; margin-bottom: 15px;">
-        <b style="font-size: 18px;">Urgencia</b><br>
-        <span style="font-size: 14px;">Consultorio de primer contacto</span><br>
-        <span style="font-size: 14px;">Hasta 30 min</span>
-    </div>
+        <!-- FILA 2: NARANJA -->
+        <tr style="color: #ff8433; font-size: 14px;">
+            <td style="padding: 10px;"><b><i>Emergencia</i></b></td>
+            <td style="padding: 10px;">Área de<br>reanimación</td>
+            <td style="padding: 10px;">Inmediato<br>hasta 10 min</td>
+        </tr>
 
-    <div style="color: #27bd73; margin-bottom: 15px;">
-        <b style="font-size: 18px;">Urgencia menor</b><br>
-        <span style="font-size: 14px;">Consultorio de primer contacto o UMF</span><br>
-        <span style="font-size: 14px;">Hasta 120 min</span>
-    </div>
+        <!-- FILA 3: AMARILLO -->
+        <tr style="color: #e0ca20; font-size: 14px;">
+            <td style="padding: 10px;"><b><i>Urgencia</i></b></td>
+            <td style="padding: 10px;">Consultorio de<br>primer contacto</td>
+            <td style="padding: 10px;">Hasta 30 min</td>
+        </tr>
 
-    <div style="color: #0b55ca; margin-bottom: 15px;">
-        <b style="font-size: 18px;">Sin urgencia</b><br>
-        <span style="font-size: 14px;">Consultorio de primer contacto o UMF</span><br>
-        <span style="font-size: 14px;">Hasta 180 min</span>
-    </div>
+        <!-- FILA 4: VERDE -->
+        <tr style="color: #27bd73; font-size: 14px;">
+            <td style="padding: 10px;"><b><i>Urgencia<br>menor</i></b></td>
+            <td style="padding: 10px;">Consultorio de<br>primer contacto<br>o UMF</td>
+            <td style="padding: 10px;">Hasta 120 min</td>
+        </tr>
+
+        <!-- FILA 5: AZUL -->
+        <tr style="color: #0b55ca; font-size: 14px;">
+            <td style="padding: 10px;"><b><i>Sin<br>urgencia</i></b></td>
+            <td style="padding: 10px;">Consultorio de<br>primer contacto<br>o UMF</td>
+            <td style="padding: 10px;">Hasta 180 min</td>
+        </tr>
+
+    </table>
 
 </body>
 </html>
