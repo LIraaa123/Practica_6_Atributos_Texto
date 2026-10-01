@@ -1,35 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Semáforo TRIAGE</title>
+    <title>Semaforo TRIAGE</title>
 </head>
 <body style="font-family: Arial; text-align: center;">
 
-    <h1 style="color: navy; font-size: 30px;">Semáforo TRIAGE</h1>
-    <h3 style="color: navy; font-size: 18px;">urgencias</h3>
+    <!-- TITULO -->
+    <h1 style="color: #0b2265; font-size: 35px; margin-bottom: 0;">Semáforo TRIAGE</h1>
+    <p style="color: #0b2265; font-size: 20px; font-style: italic; margin-top: 0;">urgencias</p>
 
-    <br>
+    <!-- ENCABEZADOS DE COLUMNAS -->
+    <div style="background-color: #e8eef8; color: #0b2265; font-size: 13px; font-weight: bold; padding: 6px; margin-bottom: 15px;">
+        Tipo de atención &nbsp;&nbsp;|&nbsp;&nbsp; Área de atención &nbsp;&nbsp;|&nbsp;&nbsp; Tiempo de espera
+    </div>
 
-    <p style="color: red; font-size: 18px;">
-        <b>Reanimación</b> - Área de reanimación - Inmediato hasta 3 min
-    </p>
+    <!-- ROJO -->
+    <div style="color: #ff2a2a; margin-bottom: 15px;">
+        <b style="font-size: 18px;">Reanimación</b><br>
+        <span style="font-size: 14px;">Área de reanimación</span><br>
+        <span style="font-size: 14px;">Inmediato hasta 3 min</span>
+    </div>
 
-    <p style="color: orange; font-size: 18px;">
-        <b>Emergencia</b> - Área de reanimación - Inmediato hasta 10 min
-    </p>
+    <!-- NARANJA -->
+    <div style="color: #ff8433; margin-bottom: 15px;">
+        <b style="font-size: 18px;">Emergencia</b><br>
+        <span style="font-size: 14px;">Área de reanimación</span><br>
+        <span style="font-size: 14px;">Inmediato hasta 10 min</span>
+    </div>
 
-    <p style="color: goldenrod; font-size: 18px;">
-        <b>Urgencia</b> - Consultorio de primer contacto - Hasta 30 min
-    </p>
+    <!-- AMARILLO -->
+    <div style="color: #e0ca20; margin-bottom: 15px;">
+        <b style="font-size: 18px;">Urgencia</b><br>
+        <span style="font-size: 14px;">Consultorio de primer contacto</span><br>
+        <span style="font-size: 14px;">Hasta 30 min</span>
+    </div>
 
-    <p style="color: green; font-size: 18px;">
-        <b>Urgencia menor</b> - Consultorio de primer contacto o UMF - Hasta 120 min
-    </p>
+    <!-- VERDE -->
+    <div style="color: #27bd73; margin-bottom: 15px;">
+        <b style="font-size: 18px;">Urgencia menor</b><br>
+        <span style="font-size: 14px;">Consultorio de primer contacto o UMF</span><br>
+        <span style="font-size: 14px;">Hasta 120 min</span>
+    </div>
 
-    <p style="color: blue; font-size: 18px;">
-        <b>Sin urgencia</b> - Consultorio de primer contacto o UMF - Hasta 180 min
-    </p>
+    <!-- AZUL -->
+    <div style="color: #0b55ca; margin-bottom: 15px;">
+        <b style="font-size: 18px;">Sin urgencia</b><br>
+        <span style="font-size: 14px;">Consultorio de primer contacto o UMF</span><br>
+        <span style="font-size: 14px;">Hasta 180 min</span>
+    </div>
 
 </body>
 </html>
